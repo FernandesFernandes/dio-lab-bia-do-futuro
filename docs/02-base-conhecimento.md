@@ -40,7 +40,7 @@ with open('data/perfil_investidor.json', 'r', encoding = 'utf-8') as f:
   perfil = json.load(f)
 
 with open('data/produtos_financeiros.json', 'r', encoding = 'utf-8') as f:
-  perfil = json.load(f)
+  produtos = json.load(f)
 
 ```
 ### Como os dados são usados no prompt?
