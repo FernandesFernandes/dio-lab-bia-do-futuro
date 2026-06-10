@@ -102,22 +102,23 @@ Resposta Inteligente
 ArgosAI/
 │
 ├── data/
-│   ├── perfil_investidor.json
-│   ├── historico_atendimento.csv
-│   └── conhecimentos_financeiros.json
+│   ├── historico_atendimento.csv      # Histórico de atendimentos
+│   ├── perfil_investidor.json         # Perfil do cliente
+│   ├── produtos_financeiros.json      # Produtos financeiros disponíveis
+│   └── transacoes.csv                 # Histórico de transações
 │
-├── src/
-│   ├── app.py
-│   ├── contexto.py
-│   ├── prompts.py
-│   │
-│   └── utils/
-│       ├── carregador.py
-│       └── helpers.py
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+└── src/
+    │
+    ├── app.py                         # Interface Streamlit
+    ├── contexto.py                    # Montagem do contexto para a IA
+    ├── prompts.py                     # Prompt do sistema
+    │
+    ├── services/
+    │   ├── contexto_service.py        # Carrega e prepara os dados
+    │   └── llm.py                     # Integração com Ollama
+    │
+    └── utils/
+        └── carregador.py              # Leitura de CSV e JSON
 ```
 
 ---
@@ -220,18 +221,6 @@ Isso significa:
 * Menor dependência de serviços externos
 * Controle dos dados
 * Redução de custos com APIs pagas
-
----
-
-# 🚧 Roadmap
-
-* [ ] Integração com banco de dados
-* [ ] Memória vetorial
-* [ ] Upload de documentos financeiros
-* [ ] Dashboard de investimentos
-* [ ] Integração com APIs financeiras
-* [ ] Múltiplos perfis de usuários
-* [ ] Geração de relatórios financeiros
 
 ---
 
