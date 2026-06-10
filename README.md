@@ -1,149 +1,275 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🚀 Argos AI
 
-## Contexto
+<div align="center">
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+<img src="https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python">
+<img src="https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit">
+<img src="https://img.shields.io/badge/Ollama-Local_LLM-green?style=for-the-badge">
+<img src="https://img.shields.io/badge/AI-Finance-orange?style=for-the-badge">
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+### Seu Consultor Financeiro Inteligente com IA Local
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+Assistente virtual especializado em educação financeira, investimentos e planejamento financeiro pessoal, utilizando Inteligência Artificial Local através do Ollama.
 
----
-
-## O Que Você Deve Entregar
-
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+</div>
 
 ---
 
-### 2. Base de Conhecimento
+# 📖 Sobre o Projeto
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+O **Argos AI** é um assistente financeiro inteligente desenvolvido para fornecer orientações educacionais sobre finanças pessoais e investimentos.
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+O projeto utiliza modelos de linguagem executados localmente através do **Ollama**, combinados com uma base de conhecimento personalizada para oferecer respostas contextualizadas e alinhadas ao perfil do investidor.
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+O objetivo é democratizar o acesso à educação financeira por meio de uma experiência conversacional simples, segura e personalizada.
 
 ---
 
-### 3. Prompts do Agente
+# ✨ Principais Funcionalidades
 
-Documente os prompts que definem o comportamento do seu agente:
+✅ Chat financeiro inteligente
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
+✅ Integração com modelos locais via Ollama
 
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+✅ Personalização por perfil de investidor
 
----
+✅ Histórico de conversas
 
-### 4. Aplicação Funcional
+✅ Contextualização por arquivos JSON e CSV
 
-Desenvolva um **protótipo funcional** do seu agente:
+✅ Recomendações educacionais sobre investimentos
 
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
+✅ Interface amigável com Streamlit
 
-📁 **Pasta:** [`src/`](./src/)
+✅ Arquitetura modular e escalável
 
 ---
 
-### 5. Avaliação e Métricas
+# 🧠 Como Funciona
 
-Descreva como você avalia a qualidade do seu agente:
+O Argos AI utiliza uma arquitetura baseada em:
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
+1. Coleta de informações do usuário
+2. Carregamento de dados financeiros estruturados
+3. Construção de contexto personalizado
+4. Geração de respostas através de um LLM local
+5. Exibição da resposta em interface Streamlit
 
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
+Fluxo simplificado:
 
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+```text
+Usuário
+   │
+   ▼
+Streamlit
+   │
+   ▼
+Context Builder
+   │
+   ▼
+Base de Conhecimento
+(JSON + CSV)
+   │
+   ▼
+Prompt Engineering
+   │
+   ▼
+Ollama
+   │
+   ▼
+Resposta Inteligente
 ```
 
 ---
 
-## Dicas Finais
+# 🛠️ Tecnologias Utilizadas
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+| Tecnologia         | Finalidade            |
+| ------------------ | --------------------- |
+| Python             | Backend               |
+| Streamlit          | Interface Web         |
+| Ollama             | Execução Local de LLM |
+| JSON               | Perfil do Investidor  |
+| CSV                | Histórico e Dados     |
+| Requests           | Comunicação com APIs  |
+| Prompt Engineering | Contextualização      |
+
+---
+
+# 📂 Estrutura do Projeto
+
+```text
+ArgosAI/
+│
+├── data/
+│   ├── perfil_investidor.json
+│   ├── historico_atendimento.csv
+│   └── conhecimentos_financeiros.json
+│
+├── src/
+│   ├── app.py
+│   ├── contexto.py
+│   ├── prompts.py
+│   │
+│   └── utils/
+│       ├── carregador.py
+│       └── helpers.py
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+# ⚙️ Instalação
+
+## 1 - Clone o projeto
+
+```bash
+git clone https://github.com/FernandesFernandes/dio-lab-bia-do-futuro.git
+
+cd dio-lab-bia-do-futuro
+```
+
+## 2 - Crie um ambiente virtual
+
+```bash
+python -m venv venv
+```
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / Mac
+
+```bash
+source venv/bin/activate
+```
+
+## 3 - Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# 🤖 Configurando o Ollama
+
+Instale o Ollama:
+
+https://ollama.com
+
+Baixe o modelo desejado:
+
+```bash
+ollama pull gpt-oss
+```
+
+ou
+
+```bash
+ollama pull llama3
+```
+
+Inicie o servidor:
+
+```bash
+ollama serve
+```
+
+---
+
+# ▶️ Executando a Aplicação
+
+```bash
+streamlit run src/app.py
+```
+
+A aplicação estará disponível em:
+
+```text
+http://localhost:8501
+```
+
+---
+
+# 🎯 Casos de Uso
+
+* Educação Financeira
+* Planejamento Financeiro
+* Reserva de Emergência
+* Perfil de Investidor
+* Introdução aos Investimentos
+* Simulação de Cenários Financeiros
+* Orientação para iniciantes
+
+---
+
+# 🔒 Privacidade
+
+Uma das principais vantagens do Argos AI é a utilização de modelos executados localmente.
+
+Isso significa:
+
+* Maior privacidade
+* Menor dependência de serviços externos
+* Controle dos dados
+* Redução de custos com APIs pagas
+
+---
+
+# 🚧 Roadmap
+
+* [ ] Integração com banco de dados
+* [ ] Memória vetorial
+* [ ] Upload de documentos financeiros
+* [ ] Dashboard de investimentos
+* [ ] Integração com APIs financeiras
+* [ ] Múltiplos perfis de usuários
+* [ ] Geração de relatórios financeiros
+
+---
+
+# 👨‍💻 Autor
+
+### Fernando Fernandes
+
+Desenvolvedor apaixonado por:
+
+* Inteligência Artificial
+* Python
+* Automação
+* Engenharia de Software
+* Soluções Financeiras
+
+GitHub:
+https://github.com/FernandesFernandes
+
+---
+
+# ⭐ Apoie o Projeto
+
+Se este projeto foi útil para você:
+
+⭐ Deixe uma estrela no repositório
+
+🍴 Faça um fork
+
+🛠️ Contribua com melhorias
+
+📢 Compartilhe com a comunidade
+
+---
+
+<div align="center">
+
+### Argos AI
+
+### Inteligência Artificial aplicada à Educação Financeira
+
+</div>
