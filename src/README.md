@@ -1,31 +1,39 @@
-# Código da Aplicação
+## ArgosAI
 
-Esta pasta contém o código do seu agente financeiro.
+Chatbot educador financeiro desenvolvido com Python, Streamlit e Ollama.
 
-## Estrutura Sugerida
+## Estrutura do Projeto
 
+```text
+ArgosAI/
+│
+├── data/
+│   ├── historico_atendimento.csv      # Histórico de atendimentos
+│   ├── perfil_investidor.json         # Perfil do cliente
+│   ├── produtos_financeiros.json      # Produtos financeiros disponíveis
+│   └── transacoes.csv                 # Histórico de transações
+│
+└── src/
+    │
+    ├── app.py                         # Interface Streamlit
+    ├── contexto.py                    # Montagem do contexto para a IA
+    ├── prompts.py                     # Prompt do sistema
+    │
+    ├── services/
+    │   ├── contexto_service.py        # Carrega e prepara os dados
+    │   └── llm.py                     # Integração com Ollama
+    │
+    └── utils/
+        └── carregador.py              # Leitura de CSV e JSON
 ```
-src/
-├── app.py              # Aplicação principal (Streamlit/Gradio)
-├── agente.py           # Lógica do agente
-├── config.py           # Configurações (API keys, etc.)
-└── requirements.txt    # Dependências
-```
-
-## Exemplo de requirements.txt
 
 ```
 streamlit
 openai
 python-dotenv
+
 ```
-
-## Como Rodar
-
-```bash
-# Instalar dependências
-pip install -r requirements.txt
-
 # Rodar a aplicação
 streamlit run app.py
+
 ```
