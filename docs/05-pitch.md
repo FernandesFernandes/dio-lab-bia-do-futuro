@@ -23,7 +23,7 @@ Aqui demostramos o Argos AI em ação respondendo as perguntas do questionário 
 ### 4. Diferencial e Impacto (30 seg)
 > Por que essa solução é inovadora e qual é o impacto dela na sociedade?
 
-É inovadora pois foi o primeiro construido por mim e sem custos de tokens e o maior impacto é  trazer o conhecimento a uma grande  parcela de  Brasileiros carentes desse tipo de informação.
+É inovadora pois foi construido  usando uma llmm local e sem custos de tokens e o maior impacto é  trazer o conhecimento a uma grande  parcela de  Brasileiros carentes desse tipo de informação.
 
 ---
 
