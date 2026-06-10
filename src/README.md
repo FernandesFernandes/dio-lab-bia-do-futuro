@@ -27,13 +27,4 @@ ArgosAI/
         └── carregador.py              # Leitura de CSV e JSON
 ```
 
-```
-streamlit
-openai
-python-dotenv
 
-```
-# Rodar a aplicação
-streamlit run app.py
-
-```
