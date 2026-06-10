@@ -8,12 +8,12 @@
 ### 1. O Problema (30 seg)
 > Qual dor do cliente você resolve?
 
-[Sua descrição aqui]
+Argos AI foi criado justamente para quebrar a barreira e aproximar o Brasileiro de conceitos básicos do setor de finanças pessoais.
 
 ### 2. A Solução (1 min)
 > Como seu agente resolve esse problema?
 
-[Sua descrição aqui]
+Argos AI trás de  maneira simples, educativa e direta os conceitos de finanças, fazendo o cliente se s entir seguro nas suas escolhas e possibilitando a realização de seus sonhos.
 
 ### 3. Demonstração (1 min)
 > Mostre o agente funcionando (pode ser gravação de tela)
@@ -23,17 +23,17 @@
 ### 4. Diferencial e Impacto (30 seg)
 > Por que essa solução é inovadora e qual é o impacto dela na sociedade?
 
-[Sua descrição aqui]
+É inovadora pois foi o primeiro construido por mim e sem custos de tokens e o maior impacto é  trazer o conhecimento a uma grande  parcela de  Brasileiros carentes desse tipo de informação.
 
 ---
 
 ## Checklist do Pitch
 
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+- [x] Duração máxima de 3 minutos
+- [x] Problema claramente definido
+- [x] Solução demonstrada na prática
+- [x] Diferencial explicado
+- [x] Áudio e vídeo com boa qualidade
 
 ---
 
