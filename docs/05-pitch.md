@@ -41,4 +41,4 @@ Aqui demostramos o Argos AI em ação respondendo as perguntas do questionário 
 
 > Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
 
-[Link do vídeo]
+https://www.loom.com/share/77e115abbcea4ab69da9daa05c166cc9
