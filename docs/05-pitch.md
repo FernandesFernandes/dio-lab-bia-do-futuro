@@ -18,7 +18,7 @@ Argos AI trás de  maneira simples, educativa e direta os conceitos de finanças
 ### 3. Demonstração (1 min)
 > Mostre o agente funcionando (pode ser gravação de tela)
 
-[Descreva o que será mostrado]
+Aqui demostramos o Argos AI em ação respondendo as perguntas do questionário de métricas.
 
 ### 4. Diferencial e Impacto (30 seg)
 > Por que essa solução é inovadora e qual é o impacto dela na sociedade?
